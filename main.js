@@ -1,7 +1,3 @@
-/* ====================== *
- *  Toggle Between        *
- *  Sign Up / Login       *
- * ====================== */
 $(document).ready(function () {
   $("#goRight").on("click", function () {
     $("#slideBox").animate({
@@ -27,9 +23,6 @@ $(document).ready(function () {
   });
 });
 
-/* ====================== *
- *  Initiate Canvas       *
- * ====================== */
 paper.install(window);
 paper.setup(document.getElementById("canvas"));
 
@@ -134,9 +127,6 @@ function initializeShapes() {
 
 initializeShapes();
 
-/* ====================== *
- * Animation              *
- * ====================== */
 view.onFrame = function paperOnFrame(event) {
   if (event.count % 4 === 0) {
     // Slows down frame rate
