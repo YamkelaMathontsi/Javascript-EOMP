@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./create-acc.css" />
+  </head>
+  <body>
+    <form
+      class="form"
+      action="https://formspree.io/f/xpzkwbye"
+      method="POST"
+      id="contact-form"
+    >
+      <h1 class="contact-heading">contact me</h1>
+
+      <div class="input">
+        <label for="name" class="contact-info"></label>
+        <input
+          type="text"
+          id="name"
+          required
+          name="name"
+          class="contact-input"
+          placeholder="full name"
+        />
+      </div>
+      <!-- EMAIL  -->
+
+      <div class="input">
+        <label for="email">Your Email</label>
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="name@domain.com"
+          id="email"
+          class="contact-input"
+        />
+      </div>
+
+      <!-- NUMBER -->
+      <div class="input">
+        <label for="number">phone number</label>
+        <input
+          type="text"
+          name="message"
+          required
+          placeholder="071 123 4567"
+          class="contact-input"
+        />
+      </div>
+
+      <!-- MESSAGE  -->
+      <div class="input">
+        <label for="message">message</label>
+        <input
+          type="text"
+          name="message"
+          placeholder="Type in your message"
+          class="contact-input"
+        />
+      </div>
+      <div class="button-groups">
+        <button class="button">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

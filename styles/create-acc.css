@@ -24,7 +24,7 @@ body {
 
 .overall-content {
   /* display: flex;
-  justify-content: center; */
+      justify-content: center; */
 }
 
 .far {
@@ -45,8 +45,8 @@ body {
 
 .container-1 {
   /* display: flex;
-  justify-content: center;
-  align-items: center; */
+      justify-content: center;
+      align-items: center; */
   flex-direction: column;
   min-height: 60vh;
   margin-top: 10px;

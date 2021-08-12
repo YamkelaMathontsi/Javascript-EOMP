@@ -5,17 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <script
-    src="https://kit.fontawesome.com/cce18f0ce0.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://kit.fontawesome.com/cce18f0ce0.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div id="back">
-      <canvas id="canvas" class="canvas-back"></canvas>
-      <div class="backRight"></div>
-      <div class="backLeft"></div>
+  
     </div>
 
     <div id="slideBox">
@@ -23,45 +20,12 @@
         <div class="left">
           <div class="content">
             <h2>Sign Up</h2>
-            <form id="form-signup" method="post" onsubmit="return false;">
-              <div class="form-element form-stack">
-                <label for="email" class="form-label">Email</label>
-                <input id="email" type="email" name="email" />
-              </div>
-              <div class="form-element form-stack">
-                <label for="username-signup" class="form-label">Username</label>
-                <input id="username-signup" type="text" name="username" />
-              </div>
-              <div class="form-element form-stack">
-                <label for="password-signup" class="form-label">Password</label>
-                <input id="password-signup" type="password" name="password" />
-              </div>
-              <div class="form-element form-checkbox">
-                <input
-                  id="confirm-terms"
-                  type="checkbox"
-                  name="confirm"
-                  value="yes"
-                  class="checkbox"
-                />
-                <label for="confirm-terms"
-                  >I agree to the <a href="#">Terms of Service</a> and
-                  <a href="#">Privacy Policy</a></label
-                >
-              </div>
-              <div class="form-element form-submit">
-                <button id="signUp" class="signup" type="submit" name="signup">
-                  Sign up
-                </button>
-                <button id="goLeft" class="signup off">Log In</button>
-              </div>
-            </form>
           </div>
         </div>
         <div class="right">
           <div class="content">
             <h2>Login</h2>
-            <form id="form-login" method="post" onsubmit="return false;">
+            <form id="form-login" method="post" action="/scripts/account.html">
               <div class="form-element form-stack">
                 <label for="username-login" class="form-label">Username</label>
                 <input id="username-login" type="text" name="username" />
@@ -70,63 +34,49 @@
                 <label for="password-login" class="form-label">Password</label>
                 <input id="password-login" type="password" name="password" />
               </div>
-              <div class="form-element form-submit">
+              <!-- <div class="form-element form-submit">
                 <button id="logIn" class="login" type="submit" name="login">
                   Log In
                 </button>
-                <!-- <button id="goRight" class="login off" name="signup">
-                  Sign Up
-                </button> -->
-              </div>
-              <div class="right-bottom">
+              </div> -->
+              <div class="button-1">
+                <a  class="btn"  href="./scripts/account.html">LOG IN</a>
+                </div>
+
+              <!-- <div class="right-bottom">
                 <h2>Register</h2>
-                <p>If you still don't have a Hitachi.com account, use this option to access the registration form.
-                  By giving us your details, purchasing in Hitachi.com will be faster and an enjoyable experience.</p>
-                <button id="logIn" class="login" type="submit" name="login">
+                <p>
+                  If you still don't have a Hitachi.com account, use this option
+                  to access the registration form. By giving us your details,
+                  purchasing in Hitachi.com will be faster and an enjoyable
+                  experience.
+                </p>
+                <button id="logIn" class="login" name="login">
                   create account
                 </button>
-              </div>
+              </div> -->
             </form>
           </div>
         </div>
       </div>
     </div>
-    <div class="top">
-      <p>
+    <div class="left">
+      <div class="top">
         <div class="heading">
-        <h1>Welcome to Hitachi<i class="far fa-circle"></i> </h1> 
+          <h1 class="Logo">Mercedes Benz <i class="far fa-circle"></i></h1>
+        </div>
+
+        <p class="introduction">
+          Mercedes is a car brand, that prides itself in delivering quality
+          and aswell as elegant products. Mercedes Benz is for people who sees
+          themselves as worthy of wearing of it. Signing up is free in less than
+          5 minutes. No contracts, no monthly fees, no nonsense. And free
+          delivery on all card machines in 3 business days
+        </p>
       </div>
-       <p class="introduction"> Hitachi is a clothing brand, that prides itself in delivering quality and aswell as elegant products. Hitachi is for people who sees themselves as worthy of wearing of it.</p>
-      </p>
+      <div class="image-container">
+        <img src="./images/dp.webp" alt="" />
+      </div>
     </div>
-    <div>
-      <img src="./dp.webp" alt="" />
-    </div>
-<div class="bottom">
-  <p>Signing up is free in less than 5 minutes. No contracts, no monthly fees, no nonsense. And free delivery on all card machines in 3 business days
-     <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum beatae molestias illum tempore. Laudantium amet ipsam, maxime quae dolorum nam dolorem modi veniam nobis aspernatur velit ratione eum, ducimus aliquid!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iusto ab earum maxime? Minus eaque voluptas doloremque dolore porro, iusto iure aspernatur similique commodi aut animi voluptatem error odit quae?
-    .Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non itaque autem expedita reiciendis laboriosam soluta. Vel sequi a saepe aliquid nobis at, inventore nesciunt officiis ut illum, eum, culpa tenetur!</p> -->
-</div>
-    <!-- 
-      
-      Remixed from "Sliding Login Form" Codepen by
-      C-Rodg (github.com/C-Rodg)
-      https://codepen.io/crodg/pen/yNKxej
-      
-      Remixed from "Paper.js - Animated Shapes Header" Codepen by
-      Connor Hubeny (@cooper_hu)
-      https://codepen.io/cooper_hu/pen/ybxoev
-      
-      Custom Checkbox based on the blog post by
-      Mik Ted (@inserthtml):
-      https://www.inserthtml.com/2012/06/custom-form-radio-checkbox/
-      
-      HTML5 Form Validation based on the blog post by
-      Thoriq Firdaus (@tfirdaus):
-      https://webdesign.tutsplus.com/tutorials/
-      html5-form-validation-with-the-pattern-attribute--cms-25145
-      
-      -->
   </body>
 </html>

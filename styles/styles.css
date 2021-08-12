@@ -17,23 +17,18 @@ body {
 }
 
 .introduction {
-  padding: 10px 0px 20px 100px;
+  padding: 30px 0px 20px 40px;
 }
 
 .top {
-  width: 50vw;
-  background-color: antiquewhite;
-}
-
-.bottom {
-  width: 44vw;
-  background-color: antiquewhite;
-  padding: 50px;
+  width: 43vw;
+  /* background-color: antiquewhite; */
 }
 
 img {
   width: 50vw;
   /* margin-top: 7%; */
+  height: 100%;
 }
 
 .far {
@@ -41,6 +36,7 @@ img {
   background-color: red;
   border-radius: 50%;
   color: red;
+  font-size: 15px;
 }
 
 .right-bottom {
@@ -111,9 +107,8 @@ input {
 }
 
 .left {
-  width: 50%;
+  width: 52%;
   height: 100%;
-  overflow: scroll;
   background: theme-signup-background;
   left: 0;
   position: absolute;
@@ -152,20 +147,14 @@ label {
 }
 input {
   border-bottom: 1px solid theme-dark;
-
-  /* :active 
-      border-color: $theme-login;
-
-    :-webkit-autofill 
-      -webkit-box-shadow: 0 0 0 30px theme-login-background inset;
-      -webkit-text-fill-color: theme-dark; */
+  width: 50%;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 60%;
+  min-height: 90%;
   width: 80%;
   margin: 0 auto;
   position: relative;
@@ -250,6 +239,7 @@ button {
   padding: 0.8em 1.2em;
   margin: 0 10px 0 0;
   width: auto;
+  cursor: pointer;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 1em;
@@ -267,19 +257,22 @@ button {
   background: orange;
 }
 .login {
-  background: orange;
+  background: transparent;
+  color: red;
+  border: red 2px solid;
+}
+
+.btn {
+  background: transparent;
+  color: red;
+  border: red 2px solid;
+  text-decoration: none;
+  padding: 10px;
 }
 .off {
   background: none;
   box-shadow: none;
   margin: 0;
-}
-
-.signup {
-  color: black;
-}
-.login {
-  color: black;
 }
 
 /* button:focus, button:active, button:hover {
@@ -312,4 +305,12 @@ button {
   .login-info {
     display: none;
   }
+}
+.top,
+.image-container {
+  height: 45%;
+}
+
+.top {
+  padding: 50px;
 }
